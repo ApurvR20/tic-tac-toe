@@ -1,0 +1,46 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard{
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 304px;
+    width: 304px;
+    visibility: collapse;
+}
+
+.cell{
+    border: solid black 1px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+#scoreboard{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    visibility: collapse;
+}
+
+#refresh{
+    visibility: collapse;
+    font-size: 24px;
+    padding: 5px;
+}
